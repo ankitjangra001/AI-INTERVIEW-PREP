@@ -1,0 +1,503 @@
+.analysis-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #1f2937;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.analysis-header {
+  height: 80px;
+
+  background: white;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 7%;
+}
+
+.analysis-back-button {
+  border: none;
+  background: transparent;
+
+  color: #2563eb;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.analysis-back-button:hover {
+  text-decoration: underline;
+}
+
+.analysis-brand {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.analysis-container {
+  max-width: 950px;
+
+  margin: 45px auto;
+
+  padding: 0 25px;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.analysis-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 30px;
+}
+
+.analysis-main-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eff6ff;
+
+  border-radius: 13px;
+
+  font-size: 29px;
+}
+
+.analysis-heading h1 {
+  font-size: 29px;
+
+  margin-bottom: 5px;
+}
+
+.analysis-heading p {
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+/* =========================
+   LOADING
+========================= */
+
+.analysis-loading {
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 14px;
+
+  padding: 70px 30px;
+
+  text-align: center;
+}
+
+.loading-icon {
+  font-size: 50px;
+
+  margin-bottom: 15px;
+
+  animation: robotPulse 1.5s infinite;
+}
+
+@keyframes robotPulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.analysis-loading h2 {
+  margin-bottom: 8px;
+}
+
+.analysis-loading p {
+  color: #6b7280;
+
+  font-size: 14px;
+
+  margin-bottom: 25px;
+}
+
+.loading-bar {
+  max-width: 350px;
+
+  height: 7px;
+
+  margin: auto;
+
+  background: #e5e7eb;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.loading-progress {
+  width: 45%;
+
+  height: 100%;
+
+  background: #2563eb;
+
+  border-radius: 20px;
+
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(300%);
+  }
+}
+
+/* =========================
+   ERROR
+========================= */
+
+.analysis-error {
+  background: white;
+
+  border: 1px solid #fecaca;
+
+  border-radius: 14px;
+
+  padding: 50px 25px;
+
+  text-align: center;
+}
+
+.analysis-error > div {
+  font-size: 40px;
+
+  margin-bottom: 10px;
+}
+
+.analysis-error h2 {
+  margin-bottom: 8px;
+}
+
+.analysis-error p {
+  color: #6b7280;
+
+  margin-bottom: 20px;
+}
+
+.analysis-error button {
+  padding: 11px 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* =========================
+   ANALYSIS CARD
+========================= */
+
+.analysis-card {
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 14px;
+
+  padding: 25px;
+
+  margin-bottom: 20px;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+.card-title span {
+  font-size: 22px;
+}
+
+.card-title h2 {
+  font-size: 18px;
+}
+
+/* =========================
+   OVERVIEW
+========================= */
+
+.overview-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 15px;
+}
+
+.overview-item {
+  padding: 18px;
+
+  background: #f8fafc;
+
+  border-radius: 10px;
+}
+
+.overview-item span {
+  display: block;
+
+  color: #6b7280;
+
+  font-size: 13px;
+
+  margin-bottom: 7px;
+}
+
+.overview-item strong {
+  font-size: 16px;
+}
+
+/* =========================
+   DIFFICULTY
+========================= */
+
+.difficulty {
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  background: #eef2ff;
+
+  color: #4338ca;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.analysis-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+}
+
+.analysis-tag {
+  padding: 7px 12px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  border-radius: 20px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+/* =========================
+   TOPICS
+========================= */
+
+.topics-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.topic-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 12px;
+
+  background: #f8fafc;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+}
+
+.topic-number {
+  min-width: 27px;
+
+  height: 27px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+/* =========================
+   INTERVIEW FOCUS
+========================= */
+
+.interview-focus-card {
+  background: #f8fafc;
+}
+
+.focus-list {
+  padding-left: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.focus-list li {
+  line-height: 1.5;
+
+  font-size: 14px;
+
+  color: #4b5563;
+}
+
+/* =========================
+   NO DATA
+========================= */
+
+.no-data {
+  color: #9ca3af;
+
+  font-size: 14px;
+}
+
+/* =========================
+   ACTION
+========================= */
+
+.analysis-action {
+  display: flex;
+
+  justify-content: flex-end;
+
+  margin-top: 25px;
+}
+
+.start-interview-button {
+  padding: 13px 24px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.start-interview-button:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 650px) {
+
+  .analysis-header {
+    padding: 0 20px;
+  }
+
+  .analysis-brand {
+    font-size: 15px;
+  }
+
+  .analysis-container {
+    margin: 30px auto;
+  }
+
+  .analysis-heading h1 {
+    font-size: 24px;
+  }
+
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-card {
+    padding: 20px;
+  }
+
+  .analysis-action {
+    justify-content: stretch;
+  }
+
+  .start-interview-button {
+    width: 100%;
+  }
+}
